@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,19 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
 </head>
+
 <body>
     <header class="horni-menu">
-                <nav>
-                    <ul class="menu-objekty">
-                        <li>
-                           <a class="menu-tlacitko" href="index.html">Domů</a>
-                        </li>
-                        <li>
-                        <a class="menu-tlacitko" href="kosik.html">Košík</a>
-                        </li>
-                    </ul>
-                </nav>
+        <nav>
+            <ul class="menu-objekty">
+                <li>
+                    <a class="menu-tlacitko" href="index.html">Domů</a>
+                </li>
+                <li>
+                    <a class="menu-tlacitko" href="kosik.html">Košík</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <header class="hlavicka">
         <h1>
@@ -27,9 +29,19 @@
     </header>
 
     <main>
-
+        <form>
+            <label for="minCena">Minimalni Cena</label>
+            <input type="number" id="minCena" name="minCena">
+            <label for="maxCena" >Maximalni Cena</label>
+            <input type="number"  id="maxCena" name="maxCena">
+            <button type="button" id="filtr">Filtrovat</button> <br> <br>
+            <button type="button" id="razeniNazevVzestupne">Název vzestupně</button>
+            <button type="button" id="razeniNazevSestupne">Název sestupně</button>
+            <button type="button" id="razeniCenaVzestupne">Cena vzestupně</button>
+            <button type="button" id="razeniCenaSestupne">Cena sestupně</button>
+        </form>
     </main>
- <!-- 
+    <!-- 
     // První stránka produktů 
 <div class="page" id="page1">
     <section class="item">
@@ -226,4 +238,5 @@
         </div>
         -->
 </body>
+
 </html>
