@@ -1,16 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-body{
+
+body {
     height: 100%;
-    width:100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-.hlavicka{
+
+.hlavicka {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,17 +22,18 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
     background-color: lightgoldenrodyellow;
-    
+
 }
-.horni-menu{
+
+.horni-menu {
     width: 100%;
     height: 15vh;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
-    background-color: burlywood;   
+    background-color: burlywood;
 }
 
-.menu-tlacitko{
+.menu-tlacitko {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
     font-size: 2vh;
@@ -38,20 +41,22 @@ body{
     height: auto;
 }
 
-.menu-objekty{
-display: flex;
-justify-content: space-around;
-align-items: center;
+.menu-objekty {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-form{
-    width: 100vw;
+
+form {
+    width: 100%;
     height: 22%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
 }
-.Vrsek-filtr{
+
+.Vrsek-filtr {
     width: 100%;
     height: 3vh;
     display: flex;
@@ -60,39 +65,44 @@ form{
     flex-direction: row;
 
 }
-.tlacitka-filtr{
+
+.tlacitka-filtr {
     width: 100%;
     height: 3vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: row;
+
 }
-label{
-    width: 25%;
-height:  3vh;
-background-color: yellowgreen;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-display: flex;
-justify-content: center;
-align-self: center;
+
+label {
+    width: 15%;
+    height: 3vh;
+    background-color: yellowgreen;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
-button{
+
+button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#filtr{
-width: 25%;
-height:  3vh;
-background-color: yellow;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-display: flex;
-justify-content: center;
-align-self: center;
+
+#filtr {
+    width: 20%;
+    height: 3vh;
+    background-color: yellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
-#razeniNazevVzestupne{
-    width: 25%;
+
+#razeniNazevVzestupne {
+    width: 20%;
     height: 3vh;
     background-color: yellowgreen;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -101,8 +111,8 @@ align-self: center;
     align-self: center;
 }
 
-#razeniNazevSestupne{
-    width: 25%;
+#razeniNazevSestupne {
+    width: 20%;
     height: 3vh;
     background-color: yellowgreen;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -111,8 +121,8 @@ align-self: center;
     align-self: center;
 }
 
-#razeniCenaVzestupne{
-    width: 25%;
+#razeniCenaVzestupne {
+    width: 20%;
     height: 3vh;
     background-color: yellowgreen;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -121,8 +131,8 @@ align-self: center;
     align-self: center;
 }
 
-#razeniCenaSestupne{
-    width: 25%;
+#razeniCenaSestupne {
+    width: 20%;
     height: 3vh;
     background-color: yellowgreen;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -130,8 +140,9 @@ align-self: center;
     justify-content: center;
     align-self: center;
 }
-#maxCena{
-    width: 25%;
+
+#maxCena {
+    width: 15%;
     height: 3vh;
     background-color: wheat;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -139,8 +150,9 @@ align-self: center;
     justify-content: center;
     align-self: center;
 }
-#minCena{
-    width: 25%;
+
+#minCena {
+    width: 15%;
     height: 3vh;
     background-color: wheat;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -149,12 +161,13 @@ align-self: center;
     align-self: center;
 }
 
-.seznam-produktu{
+#seznam-produktu {
     width: 100vw;
     height: fit-content;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -187,4 +200,3 @@ img{
     align-items: center;
     
 }**/
-
