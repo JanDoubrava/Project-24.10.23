@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {"id":250,"produkt":"Pork - Back, Long Cut, Boneless","cena":113}]`;
     
     let objects = JSON.parse(products);
-    console.log(objects);
+    
     //1 pokud kosik neexistuje 
     if (localStorage.getItem("kosik") == null) {
          // 2 vytvořím košík
@@ -278,16 +278,8 @@ document.addEventListener("DOMContentLoaded", function () {
         let Produkt = document.createElement("span");
         let Cena = document.createElement("p");
         let button = document.createElement("button");
-
-        kontejner.style.display = "flex"; // styly
-        kontejner.style.flexDirection = "column";
-        kontejner.style.justifyContent = "space-evenly";
-        kontejner.style.alignItems = "center";
-        kontejner.style.margin = "0.39vw";
-        kontejner.style.width = "15vw";
-        kontejner.style.height = "25vh";
-        kontejner.style.background = "";
-        kontejner.style.border = "0.39vw solid gold";
+        console.log(i);
+        kontejner.classList.add("kontejner");
         button.innerText = "Koupit";
         // 3 vložím do objektu košíku produkt
         button.addEventListener("click", function(){

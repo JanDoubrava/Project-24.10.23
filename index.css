@@ -17,7 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 25vh;
+    height: 25%;
     font-size: 5vh;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
@@ -27,7 +27,7 @@ body {
 
 .horni-menu {
     width: 100%;
-    height: 15vh;
+    height: 15%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
     background-color: burlywood;
@@ -49,7 +49,6 @@ body {
 
 form {
     width: 100%;
-    height: 22%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -58,7 +57,7 @@ form {
 
 .Vrsek-filtr {
     width: 100%;
-    height: 3vh;
+    height: 3em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,7 +67,7 @@ form {
 
 .tlacitka-filtr {
     width: 100%;
-    height: 3vh;
+    height: 3em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -77,7 +76,7 @@ form {
 
 label {
     width: 15%;
-    height: 3vh;
+    height: 3em;
     background-color: yellowgreen;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
@@ -93,7 +92,7 @@ button {
 
 #filtr {
     width: 20%;
-    height: 3vh;
+    height: 3em;
     background-color: yellow;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
@@ -101,29 +100,12 @@ button {
     align-self: center;
 }
 
-#razeniNazevVzestupne {
-    width: 20%;
-    height: 3vh;
-    background-color: yellowgreen;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-
-#razeniNazevSestupne {
-    width: 20%;
-    height: 3vh;
-    background-color: yellowgreen;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-
+#razeniNazevVzestupne,
+#razeniCenaSestupne,
+#razeniNazevSestupne,
 #razeniCenaVzestupne {
     width: 20%;
-    height: 3vh;
+    height: 3em;
     background-color: yellowgreen;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
@@ -131,35 +113,18 @@ button {
     align-self: center;
 }
 
-#razeniCenaSestupne {
-    width: 20%;
-    height: 3vh;
-    background-color: yellowgreen;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-
-#maxCena {
-    width: 15%;
-    height: 3vh;
-    background-color: wheat;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-
+#maxCena,
 #minCena {
     width: 15%;
-    height: 3vh;
+    height: 3em;
     background-color: wheat;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
     justify-content: center;
     align-self: center;
 }
+
+
 
 #seznam-produktu {
     width: 100vw;
@@ -168,6 +133,18 @@ button {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.kontejner{
+   display : flex;
+       flex-direction:  column;
+      justify-content:   space-evenly;
+       align-items:   center;
+      margin : 0.39vw;
+      width : 20%;
+       height : 25vh;
+       background: red;
+       border : 0.39vw solid gold;
 }
 
 
