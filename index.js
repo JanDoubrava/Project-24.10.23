@@ -51,14 +51,14 @@ document.addEventListener("DOMContentLoaded", function () {
         sekceProdukty.append(kontejner);
     
     //filtr ceny
-   // filtrButton.addEventListener("click", function(){// tlacitko
-      //  let minimalCena = minCena.value;
-     //   let maximalCena = maxCena.value;
-      //  if(objects[i].cena >= minimalCena && objects[i].Cena <= maximalCena ){ // pokud splnuje podmínku tak zustava zobrazen
-      //  }else{
-      //      kontejner.style.display = "none"; //ty co nesplnujou podmínku tak se skryjou
-      //  }
-   // });
+    filtrButton.addEventListener("click", function(){// tlacitko
+     let minimalCena = minCena.value;
+      let maximalCena = maxCena.value;
+     if(objects[i].cena >= minimalCena && objects[i].Cena <= maximalCena ){ // pokud splnuje podmínku tak zustava zobrazen
+     }else{
+         kontejner.style.display = "none"; //ty co nesplnujou podmínku tak se skryjou
+     }
+    });
 
 
 
