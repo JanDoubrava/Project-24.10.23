@@ -49,7 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
         kontejner.append(Produkt);
         kontejner.append(Cena);
         sekceProdukty.append(kontejner);
-    
+    }// for konec
+    for (let i = 0; i < objects.length; i++) {
     //filtr ceny
     filtrButton.addEventListener("click", function(){// tlacitko
      let minimalCena = minCena.value;
@@ -59,9 +60,79 @@ document.addEventListener("DOMContentLoaded", function () {
          kontejner.style.display = "none"; //ty co nesplnujou podmínku tak se skryjou
      }
     });
+     
+// razeni abecedne
+
+razeniNazevVzestupne.addEventListener("click", function () {   
+    objects.sort(function (a, b) { //
+        let slovo1 = a.Produkt.toLowerCase();  //prevedeni na mala pismena aby byly vsechny stejny
+        let slovo2 = b.Produkt.toLowerCase();
+        for (let i = 0; i < objects.length; i++) {
+            if (slovo1 < slovo2) { // a před b
+                return -1;  
+            }
+            if (slovo1 > slovo2) { // b před a
+                return 1; 
+            }
+            return 0;
+
+        }
+
+    });
+    produkt.innerHTML = objects[i].Produkt;
+    cena.innerHTML = objects[i].Cena + " Kč";
+}); 
+
+// razeni abecedne obracene
+razeniNazevSestupne.addEventListener("click", function () {
+    objects.sort(function (a, b) {
+        let slovo1 = a.Produkt.toLowerCase();  //prevedeni na mala pismena aby byly vsechny stejny
+        let slovo2 = b.Produkt.toLowerCase();
+        for (let i = 0; i < objects.length; i++) {
+            if (slovo1 > slovo2) { // b před a
+                return -1; 
+            }
+            if (slovo1 < slovo2) { // a před b
+                return 1;
+            }
+            return 0;
+
+        }
+    });
+    produkt.innerHTML = objects[i].Produkt;
+    cena.innerHTML = objects[i].Cena + " Kč";
+
+
+});
+
+// razeni ciselne
+razeniCenaVzestupne.addEventListener("click", function () {
+    for (let i = 0; i < objects.length; i++) {
+        objects.sort(function (a, b) {
+            return a.Cena - b.Cena;
+        });
+        produkt.innerHTML = objects[i].Produkt;
+        cena.innerHTML = objects[i].Cena + " Kč";
+
+    }
+
+});
+
+// razeni ciselne obracene
+razeniCenaSestupne.addEventListener("click", function () {
+    for (let i = 0; i < objects.length; i++) {
+        objects.sort(function (a, b) { 
+            return b.Cena - a.Cena;
+        });
+        produkt.innerHTML = objects[i].Produkt;
+        cena.innerHTML = objects[i].Cena + " Kč";
+
+    }
+
+}); 
 
 
 
-} // konec foru
 
+    }
 });//konec domContent 
